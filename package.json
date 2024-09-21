@@ -3,29 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "22.x"
+    "node": ">=20.x"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:digitalocean": "npm install --omit=dev && npm run build",
+    "build:digitalocean": "npm install --include=dev && npm run build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "next": "14.2.13",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwindcss": "^3.0.0",
+    "postcss": "^8.0.0",
+    "autoprefixer": "^10.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.0.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.13",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.x.x",
+    "postcss": "^8.0.0",
+    "tailwindcss": "^3.0.0",
     "typescript": "^5"
   }
 }
